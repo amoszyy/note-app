@@ -1,0 +1,17 @@
+<div class="body">
+    <div class="container">
+      <div class="row justify-content-center align-item-center h-100">
+        <div class="col-md-4 mt-5">
+          <form action="">
+            <label for="">email:</label>
+            <input type="text" class="form-control my-2" name="email" required="true"  [(ngModel)]="email"  #emailadd="ngModel" [class.is-invalid]="emailadd.invalid && emailadd.touched" [class.is-valid]="emailadd.valid && emailadd.touched" />
+            <label for="">password: </label>
+  
+            <input type="text" class="form-control my-2" name="password" required="true" [(ngModel)]="password" #passcode="ngModel" [class.is-invalid]="passcode.invalid && passcode.touched" [class.is-valid]="passcode.valid && passcode.touched" />
+            <button class="btn btn-success w-100" (click)="login()">login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+

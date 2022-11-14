@@ -1,0 +1,6 @@
+.homebody{
+    background-image: url(home2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
